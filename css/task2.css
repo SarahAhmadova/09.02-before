@@ -17,7 +17,13 @@
     left: 50%;
     transform: translate(-50%,-50%);
 }
-
+.icon>i{
+    position: absolute;
+    
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
 .icon::before{
     content: ' ';
     width: 30px;
