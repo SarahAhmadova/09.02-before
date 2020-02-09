@@ -1,0 +1,55 @@
+.card{
+    border: 1px solid gray;
+    width: 300px;
+    padding: 20px;
+    display: inline-block;
+
+}
+.icon-container{
+   
+    position: relative;
+    width: 100px;
+    height: 100px;
+    top: 10px;
+    left: 50%;
+transform: translateX(-50%);
+}
+.icon-container > .icon{
+    width: 100px;
+    height: 100px;
+    display: inline-block;
+    border: 1px solid red;
+    border-radius: 50%;
+    position: absolute;
+    background-color: rgb(228, 38, 38);
+   
+}
+
+.icon-container>.icon::before{
+    content: ' ';
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    border: 3px solid  rgb(228, 38, 38);
+    position: absolute;
+    left: 50%;
+    top:50%;
+    transform: translate(-50%,-50%);
+ 
+    transition: 1s;
+ 
+    
+}
+.icon-container>.icon:hover::before {
+    border: 3px solid white;
+
+    cursor: pointer;
+}
+.icon>i{
+    color: white;
+    position: absolute;
+    cursor: pointer;
+    left: 50%;
+    top:50%;
+    transform: translate(-50%,-50%);
+}
